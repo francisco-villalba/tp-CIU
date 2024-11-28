@@ -1,0 +1,15 @@
+/* .jumbotron {
+    position: relative;
+    background-image: url('../../assets/header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  */
+
+  .jumbotron {
+    background-image: url('../../assets/header-bg.jpg');
+  }
+  
