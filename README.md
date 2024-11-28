@@ -6,5 +6,6 @@ Instrucciones para correr la aplicación:
 
 - Clonar el repositorio del frontend https://github.com/francisco-villalba/tp-CIU
 - Clonar el repositorio del backend https://github.com/CIU-UnaHur/tp-backend
-- Correr ambos en dos terminales separadas usando `npm run dev`
-- Una vez corriendo, acceder a http://localhost:5173 para testear la aplicación
+- En ambas ubicaciones, correr el comando `npm install`
+- Correr ambas aplicaciones en dos terminales separadas usando `npm run dev`
+- Una vez corriendo, acceder a http://localhost:5173 para testear la UI
