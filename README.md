@@ -1,4 +1,4 @@
-# Trabajo Final - Construción de Interfaces de Usuario - UNAHUR - Segundo cuatrimestre
+# Trabajo Final - Construcción de Interfaces de Usuario - UNAHUR - Segundo cuatrimestre
 
 Este repositorio contiene una aplicación frontend hecha con React.js que consume datos de una API provista por el docente.
 
