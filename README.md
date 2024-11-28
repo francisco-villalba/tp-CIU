@@ -1,8 +1,10 @@
-# React + Vite
+# Trabajo Final - Construción de Interfaces de Usuario - UNAHUR - Segundo cuatrimestre
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositorio contiene una aplicación frontend hecha con React.js que consume datos de una API provista por el docente.
 
-Currently, two official plugins are available:
+Instrucciones para correr la aplicación:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Clonar el repositorio del frontend https://github.com/francisco-villalba/tp-CIU
+- Clonar el repositorio del backend https://github.com/CIU-UnaHur/tp-backend
+- Correr ambos en dos terminales separadas usando `npm run dev`
+- Una vez corriendo, acceder a http://localhost:5173 para testear la aplicación
