@@ -7,7 +7,7 @@ import Loading from '../Loading'
 
 export default function Productos() {
     const [productos, setProductos] = useState([])
-    const [carrito, setCarrito] = useState([])
+    const [carrito, setCarrito] = useState({})
     const [loading, setLoading] = useState(true)
     const navigate = useNavigate()
 
@@ -15,11 +15,11 @@ export default function Productos() {
         try {
             const data = await getProductos()
 
-            if(!data || data.error) navigate('/error')
+            if (!data || data.error) navigate('/error')
 
             setProductos(data)
             setLoading(false)
-            
+
         } catch (error) {
             navigate('/error')
             setLoading(false)
@@ -30,16 +30,17 @@ export default function Productos() {
     }, [])
 
     return (
-        loading ? 
-        <Loading /> :
-        (<Container className='py-5'>
-            <Row className="g-3">
-                {
-                    productos.map(p => (
-                        <Producto producto={p} key={p.id} setCarrito={setCarrito}/>
-                    ))
-                }
-            </Row>
-        </Container>)
+        loading ?
+            <Loading /> :
+            (<Container className='py-5'>
+                <p className='display-5 text-center mb-4'>Total carrito: $</p>
+                <Row className="g-3">
+                    {
+                        productos.map(p => (
+                            <Producto producto={p} key={p.id} carrito={carrito} setCarrito={setCarrito} />
+                        ))
+                    }
+                </Row>
+            </Container>)
     )
 }
